@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Unit_Parameters" load_steps=2 format=3 uid="uid://cyiw2720vo462"]
+
+[ext_resource type="Script" path="res://core_game/units/configurations/unit_parameters.gd" id="1_4sss5"]
+
+[resource]
+script = ExtResource("1_4sss5")
+max_health = 100
+move_speed = 2250
+damage_per_hit = 10
+attack_range = 20
+attack_rate = 1.0

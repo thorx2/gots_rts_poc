@@ -1,0 +1,14 @@
+[gd_scene load_steps=5 format=3 uid="uid://di8gokyjk1lxe"]
+
+[ext_resource type="PackedScene" uid="uid://wipl6vtmhru3" path="res://core_game/units/unit.tscn" id="1_8ubcm"]
+[ext_resource type="Script" path="res://core_game/units/enemy/enemy_unit.gd" id="2_fj21g"]
+[ext_resource type="Texture2D" uid="uid://0udophjr7nlt" path="res://art_assets/Sprites/tile_0096.png" id="3_3sm5u"]
+[ext_resource type="Resource" uid="uid://by7p3wrnax5um" path="res://core_game/units/configurations/basic_enemy.tres" id="3_se3hs"]
+
+[node name="EnemyUnit" instance=ExtResource("1_8ubcm")]
+script = ExtResource("2_fj21g")
+detection_range = 75.0
+unit_paramter = ExtResource("3_se3hs")
+
+[node name="Visual" parent="." index="0"]
+texture = ExtResource("3_3sm5u")

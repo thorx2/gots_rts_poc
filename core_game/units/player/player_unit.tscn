@@ -1,0 +1,20 @@
+[gd_scene load_steps=6 format=3 uid="uid://d22un8ywxvg5w"]
+
+[ext_resource type="PackedScene" uid="uid://wipl6vtmhru3" path="res://core_game/units/unit.tscn" id="1_b8qg5"]
+[ext_resource type="Texture2D" uid="uid://c33comdkkgqxh" path="res://art_assets/Sprites/tile_0086.png" id="2_1hf4e"]
+[ext_resource type="Texture2D" uid="uid://d2puj1uhmx0mj" path="res://art_assets/Sprites/tile_0060.png" id="2_rmnfs"]
+[ext_resource type="Script" path="res://core_game/units/player/player_unit.gd" id="2_slxe4"]
+[ext_resource type="Resource" uid="uid://cyiw2720vo462" path="res://core_game/units/configurations/player_units.tres" id="3_5128q"]
+
+[node name="PlayerUnit" instance=ExtResource("1_b8qg5")]
+script = ExtResource("2_slxe4")
+unit_paramter = ExtResource("3_5128q")
+is_player = true
+
+[node name="SelectVisual" type="Sprite2D" parent="." index="0"]
+visible = false
+position = Vector2(0, 6)
+texture = ExtResource("2_rmnfs")
+
+[node name="Visual" parent="." index="1"]
+texture = ExtResource("2_1hf4e")
